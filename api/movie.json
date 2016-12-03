@@ -1,56 +1,114 @@
 [
   {
-    "id": "58",
-    "qwd": "Q2002945",
-    "label": "Les Trois Louf'quetaires",
+    "id": "164",
+    "qwd": "Q657259",
+    "label": "De grandes esp\u00e9rances",
     "director": [
       {
-        "qwd": "Q295207",
-        "label": "Joel Schumacher"
+        "qwd": "Q28028",
+        "label": "Alfonso Cuar\u00f3n"
       }
     ],
     "starring": [
       {
-        "qwd": "Q169982",
-        "label": "Gerard Butler"
+        "qwd": "Q484615",
+        "label": "Ethan Hawke"
+      },
+      {
+        "qwd": "Q34460",
+        "label": "Gwyneth Paltrow"
+      },
+      {
+        "qwd": "Q273208",
+        "label": "Chris Cooper"
+      },
+      {
+        "qwd": "Q202056",
+        "label": "Hank Azaria"
+      },
+      {
+        "qwd": "Q183532",
+        "label": "Anne Bancroft"
+      },
+      {
+        "qwd": "Q36949",
+        "label": "Robert De Niro"
+      },
+      {
+        "qwd": "Q269894",
+        "label": "Kim Dickens"
+      },
+      {
+        "qwd": "Q973456",
+        "label": "Gabriel Mann"
+      },
+      {
+        "qwd": "Q541821",
+        "label": "Drena De Niro"
       }
     ],
-    "date": null,
+    "date": "1998",
     "genre": [
       {
         "qwd": "Q1054574",
         "label": "film d'amour"
+      },
+      {
+        "qwd": "Q1257444",
+        "label": "adaptation cin\u00e9matographique"
+      },
+      {
+        "qwd": "Q130232",
+        "label": "drame"
       }
     ],
     "country": [
       {
-        "qwd": "Q145",
-        "label": "Royaume-Uni"
+        "qwd": "Q30",
+        "label": "\u00c9tats-Unis"
       }
     ],
-    "imdb": "tt0032943",
-    "poster": "http:\/\/ia.media-imdb.com\/images\/M\/MV5BMTYyMTYwNzc5MF5BMl5BanBnXkFtZTgwOTI3NzUwMTE@._V1_SX300.jpg",
-    "url": "https:\/\/archive.org\/details\/PridePrejudice1940ColorisedFeaturetteDenham-LondonFilmStudios",
+    "language": [
+      {
+        "qwd": "Q1860",
+        "label": "anglais"
+      },
+      {
+        "qwd": "Q150",
+        "label": "fran\u00e7ais"
+      }
+    ],
+    "imdb": "tt0119223",
+    "poster": "https:\/\/images-na.ssl-images-amazon.com\/images\/M\/MV5BMTQ0NzI4MTg3NF5BMl5BanBnXkFtZTcwOTM1NDAyMQ@@._V1_SX300.jpg",
+    "url": "",
     "books": [
       {
-        "id": "14",
-        "qwd": "272506",
-        "title": "Le Fant\u00f4me de l'Op\u00e9ra",
+        "id": "81",
+        "qwd": "219552",
+        "title": "Les Grandes Esp\u00e9rances",
         "author": [
           {
-            "qwd": "Q298827",
-            "label": "Gaston Leroux"
+            "qwd": "Q5686",
+            "label": "Charles Dickens"
           }
         ],
-        "publication": "1910",
+        "publication": "1860",
         "genre": [
           {
+            "qwd": "Q8253",
+            "label": "fiction"
+          },
+          {
+            "qwd": "Q8261",
+            "label": "roman"
+          },
+          {
             "qwd": "Q192782",
-            "label": ""
+            "label": "roman gothique"
           }
         ],
-        "thumbnail": "http:\/\/gallica.bnf.fr\/ark:\/12148\/bpt6k808851.highres",
-        "bnf": "125746591"
+        "thumbnail": "http:\/\/gallica.bnf.fr\/ark:\/12148\/bpt6k1027756.highres",
+        "bnf": "122246495"
       }
     ]
   }

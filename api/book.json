@@ -1,47 +1,317 @@
 [
   {
-    "id": "78",
-    "qwd": "Q170583",
-    "title": "Orgueil et Pr\u00e9jug\u00e9s",
+    "id": "81",
+    "qwd": "Q219552",
+    "title": "Les Grandes Esp\u00e9rances",
     "author": [
       {
-        "qwd": "Q36322",
-        "label": "Jane Austen"
+        "qwd": "Q5686",
+        "label": "Charles Dickens"
       }
     ],
-    "publication": "1813",
+    "publication": "1860",
     "genre": [
       {
-        "qwd": "Q538812",
-        "label": ""
+        "qwd": "Q8253",
+        "label": "fiction"
+      },
+      {
+        "qwd": "Q8261",
+        "label": "roman"
+      },
+      {
+        "qwd": "Q192782",
+        "label": "roman gothique"
       }
     ],
-    "thumbnail": "http:\/\/gallica.bnf.fr\/ark:\/12148\/bpt6k851387f.highres",
-    "bnf": "11960594n",
+    "thumbnail": "http:\/\/gallica.bnf.fr\/ark:\/12148\/bpt6k1027756.highres",
+    "bnf": "122246495",
     "movies": [
       {
-        "id": "3065",
-        "qwd": "940014",
-        "label": "Orgueil et Pr\u00e9jug\u00e9s",
+        "id": "164",
+        "qwd": "657259",
+        "label": "De grandes esp\u00e9rances",
+        "director": [
+          {
+            "qwd": "Q28028",
+            "label": "Alfonso Cuar\u00f3n"
+          }
+        ],
+        "starring": [
+          {
+            "qwd": "Q484615",
+            "label": "Ethan Hawke"
+          },
+          {
+            "qwd": "Q34460",
+            "label": "Gwyneth Paltrow"
+          },
+          {
+            "qwd": "Q273208",
+            "label": "Chris Cooper"
+          },
+          {
+            "qwd": "Q202056",
+            "label": "Hank Azaria"
+          },
+          {
+            "qwd": "Q183532",
+            "label": "Anne Bancroft"
+          },
+          {
+            "qwd": "Q36949",
+            "label": "Robert De Niro"
+          },
+          {
+            "qwd": "Q269894",
+            "label": "Kim Dickens"
+          },
+          {
+            "qwd": "Q973456",
+            "label": "Gabriel Mann"
+          },
+          {
+            "qwd": "Q541821",
+            "label": "Drena De Niro"
+          }
+        ],
+        "date": "1998",
+        "genre": [
+          {
+            "qwd": "Q1054574",
+            "label": "film d'amour"
+          },
+          {
+            "qwd": "Q1257444",
+            "label": "adaptation cin\u00e9matographique"
+          },
+          {
+            "qwd": "Q130232",
+            "label": "drame"
+          }
+        ],
+        "country": [
+          {
+            "qwd": "Q30",
+            "label": "\u00c9tats-Unis"
+          }
+        ],
+        "language": [
+          {
+            "qwd": "Q1860",
+            "label": "anglais"
+          },
+          {
+            "qwd": "Q150",
+            "label": "fran\u00e7ais"
+          }
+        ],
+        "imdb": "tt0119223",
+        "poster": "https:\/\/images-na.ssl-images-amazon.com\/images\/M\/MV5BMTQ0NzI4MTg3NF5BMl5BanBnXkFtZTcwOTM1NDAyMQ@@._V1_SX300.jpg",
+        "url": ""
+      },
+      {
+        "id": "218",
+        "qwd": "1282209",
+        "label": "Les Grandes Esp\u00e9rances",
+        "director": [
+          {
+            "qwd": "Q55260",
+            "label": "David Lean"
+          }
+        ],
+        "starring": [
+          {
+            "qwd": "Q315728",
+            "label": "John Mills"
+          },
+          {
+            "qwd": "Q4773655",
+            "label": "Anthony Wager"
+          },
+          {
+            "qwd": "Q107656",
+            "label": "Jean Simmons"
+          },
+          {
+            "qwd": "Q437157",
+            "label": "Valerie Hobson"
+          },
+          {
+            "qwd": "Q103894",
+            "label": "Alec Guinness"
+          },
+          {
+            "qwd": "Q458146",
+            "label": "Martita Hunt"
+          },
+          {
+            "qwd": "Q1391088",
+            "label": "Finlay Currie"
+          },
+          {
+            "qwd": "Q969601",
+            "label": "Francis L. Sullivan"
+          },
+          {
+            "qwd": "Q822610",
+            "label": "Bernard Miles"
+          },
+          {
+            "qwd": "Q2084116",
+            "label": "Freda Jackson"
+          },
+          {
+            "qwd": "Q439588",
+            "label": "Torin Thatcher"
+          }
+        ],
+        "date": "1946",
+        "genre": [
+          {
+            "qwd": "Q130232",
+            "label": "drame"
+          },
+          {
+            "qwd": "Q1257444",
+            "label": "adaptation cin\u00e9matographique"
+          }
+        ],
+        "country": [
+          {
+            "qwd": "Q145",
+            "label": "Royaume-Uni"
+          }
+        ],
+        "language": [
+          {
+            "qwd": "Q1860",
+            "label": "anglais"
+          }
+        ],
+        "imdb": "tt0038574",
+        "poster": "https:\/\/images-na.ssl-images-amazon.com\/images\/M\/MV5BMjk1MTY4MDYxOF5BMl5BanBnXkFtZTYwMjg3MzU5._V1._CR2,36,343,438_SY132_CR7,0,89,132_AL_.jpg_V1_SX300.jpg",
+        "url": "https:\/\/archive.org\/details\/GreatExpectations1946"
+      },
+      {
+        "id": "295",
+        "qwd": "2079954",
+        "label": "De grandes esp\u00e9rances",
+        "director": [
+          {
+            "qwd": "Q312088",
+            "label": "Mike Newell"
+          }
+        ],
+        "starring": [
+          {
+            "qwd": "Q28493",
+            "label": "Ralph Fiennes"
+          },
+          {
+            "qwd": "Q170428",
+            "label": "Helena Bonham Carter"
+          },
+          {
+            "qwd": "Q472504",
+            "label": "Jason Flemyng"
+          },
+          {
+            "qwd": "Q296008",
+            "label": "Robbie Coltrane"
+          },
+          {
+            "qwd": "Q263743",
+            "label": "Holliday Grainger"
+          },
+          {
+            "qwd": "Q520651",
+            "label": "Ewen Bremner"
+          },
+          {
+            "qwd": "Q542571",
+            "label": "Jeremy Irvine"
+          },
+          {
+            "qwd": "Q233563",
+            "label": "Sally Hawkins"
+          },
+          {
+            "qwd": "Q359665",
+            "label": "David Walliams"
+          },
+          {
+            "qwd": "Q233439",
+            "label": "Jessie Cave"
+          },
+          {
+            "qwd": "Q4410337",
+            "label": "Daniel Weyman"
+          },
+          {
+            "qwd": "Q3129655",
+            "label": "Helena Barlow"
+          }
+        ],
+        "date": "2012",
+        "genre": [
+          {
+            "qwd": "Q130232",
+            "label": "drame"
+          },
+          {
+            "qwd": "Q1257444",
+            "label": "adaptation cin\u00e9matographique"
+          }
+        ],
+        "country": [
+          {
+            "qwd": "Q145",
+            "label": "Royaume-Uni"
+          }
+        ],
+        "language": [
+          {
+            "qwd": "Q1860",
+            "label": "anglais"
+          }
+        ],
+        "imdb": "tt1836808",
+        "poster": "https:\/\/images-na.ssl-images-amazon.com\/images\/M\/MV5BMjMzODMxNjA3NF5BMl5BanBnXkFtZTgwMDIzMzY0MDE@._V1_SX300.jpg",
+        "url": ""
+      },
+      {
+        "id": "334",
+        "qwd": "591036",
+        "label": "Great Expectations",
         "director": [
           
         ],
         "starring": [
           
         ],
-        "date": "1940",
+        "date": "2013",
         "genre": [
-          
+          {
+            "qwd": "Q1366112",
+            "label": "drama"
+          }
         ],
         "country": [
-          
+          {
+            "qwd": "Q145",
+            "label": "Royaume-Uni"
+          }
         ],
         "language": [
-          
+          {
+            "qwd": "Q1860",
+            "label": "anglais"
+          }
         ],
-        "imdb": "tt0032943",
-        "poster": "http:\/\/ia.media-imdb.com\/images\/M\/MV5BMTYyMTYwNzc5MF5BMl5BanBnXkFtZTgwOTI3NzUwMTE@._V1_SX300.jpg",
-        "url": "https:\/\/archive.org\/details\/PridePrejudice1940ColorisedFeaturetteDenham-LondonFilmStudios"
+        "imdb": "tt1949720",
+        "poster": "https:\/\/images-na.ssl-images-amazon.com\/images\/M\/MV5BZDdhZTkyODktZDYyNS00YTdlLWJlOWYtYmQ4MTQ0OGQzODU3XkEyXkFqcGdeQXVyMjExMjk0ODk@._V1_SX300.jpg",
+        "url": ""
       }
     ]
   }
