@@ -47,4 +47,4 @@ http://zone47.com/tda/api/?bnf=122246495
 
 [NB : type a comme valeur par défaut "movies"]
 [NB2 : pour les identifiant wikidata,  le caratère "Q" est facultatif ; ?genre=Q1433443 équivaut à ?genre=1433443]
-[NB3 : hormi q, imdb, et bnf, censés ne renvoyer qu'une réponse, les autres paramètres sont combinables pour un même type (books ou movies) même si étant donné le volume actuel cela ne présente pas grand intérêt]
+[NB3 : hormis pour q, imdb, et bnf, censés ne renvoyer qu'une réponse, les autres paramètres sont combinables pour un même type (books ou movies) même si étant donné le volume actuel cela ne présente pas grand intérêt]
