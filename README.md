@@ -44,3 +44,7 @@ http://zone47.com/tda/api/?q=Q657259
 http://zone47.com/tda/api/?imdb=tt0119223  
 * Recherche infos et adaptations du livre avec identifiant bnf "cb122246495"/"De grandes espérances"  
 http://zone47.com/tda/api/?bnf=122246495
+
+[NB : type a comme valeur par défaut "movies"]
+[NB2 : pour les identifiant wikidata,  le caratère "Q" est facultatif ; ?genre=Q1433443 équivaut à ?genre=1433443]
+[NB3 : hormi q, imdb, et bnf, censés ne renvoyer qu'une réponse, les autres paramètres sont combinables pour un même type (books ou movies) même si étant donné le volume actuel cela ne présente pas grand intérêt]
