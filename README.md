@@ -9,27 +9,27 @@ Les données renvoyées sont soit :
     exemple : api/book.json  
 Les données sont au format JSON.  
   
-* 20 films (avec oeuvres adaptées) au hasard  
+* 20 films (avec œuvres adaptées) au hasard  
 http://zone47.com/tda/api/  
 * 20 livres (avec adaptations) au hasard  
 http://zone47.com/tda/api/?type=books  
   
-* Recherche textuelles "lieues" pour des films (avec oeuvres adaptées)  
+* Recherche textuelles "lieues" pour des films (avec œuvres adaptées)  
 http://zone47.com/tda/api/?s=lieues  
 * Recherche textuelles "trois" pour des livres  
 http://zone47.com/tda/api/?s=trois&type=books  
   
-* Films (avec oeuvres adaptées) du genre Q319221/"film d'aventure"  
+* Films (avec œuvres adaptées) du genre Q319221/"film d'aventure"  
 http://zone47.com/tda/api/?genre=319221  
-* Films (avec oeuvres adaptées) réalisés par Q2001/"Stanley Kubrick"  
+* Films (avec œuvres adaptées) réalisés par Q2001/"Stanley Kubrick"  
 http://zone47.com/tda/api/?director=2001  
-* Films (avec oeuvres adaptées) avec Q23842/"Jean Gabin"  
+* Films (avec œuvres adaptées) avec Q23842/"Jean Gabin"  
 http://zone47.com/tda/api/?starring=23842  
-* Films (avec oeuvres adaptées) avec pays Q15180/"URSS"  
+* Films (avec œuvres adaptées) avec pays Q15180/"URSS"  
 http://zone47.com/tda/api/?country=15180  
-* Films (avec oeuvres adaptées) avec langue Q150/"français"  
+* Films (avec œuvres adaptées) avec langue Q150/"français"  
 http://zone47.com/tda/api/?language=150  
-* Films (avec oeuvres adaptées) des années 1920-1930  
+* Films (avec œuvres adaptées) des années 1920-1930  
 http://zone47.com/tda/api/?y1=1920&y2=1930  
   
 * Livres (avec adaptations) du genre Q858330/"roman d'amour"  
