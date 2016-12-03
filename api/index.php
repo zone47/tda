@@ -56,7 +56,7 @@ while($data = mysqli_fetch_assoc($rep)) {
 		$result['bnf']=$data['bnf'];
 		$result['movies']=array();
 		$ids_movies=val_prop($id,144);
-		$sql="SELECT * FROM movies,artw_prop WHERE artw_prop.prop=144 AND artw_prop.id_prop=".$id." AND movies.id=artw_prop.id_artw";
+		$sql="SELECT movies.id as id,movies.qwd as qwd,publication,imdb,poster,url FROM movies,artw_prop WHERE artw_prop.prop=144 AND artw_prop.id_prop=".$id." AND movies.id=artw_prop.id_artw";
 		$rep_movie=mysqli_query($link,$sql);
 		$num_rows= mysqli_num_rows($rep_movie);
 		if ($num_rows!=0){

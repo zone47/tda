@@ -22,6 +22,7 @@ mysqli_query($link,"TRUNCATE `p144`");
 mysqli_query($link,"TRUNCATE `p161`");
 mysqli_query($link,"TRUNCATE `p364`");
 mysqli_query($link,"TRUNCATE `p495`");
+mysqli_query($link,"TRUNCATE `p9136`");
 
 exec("del /Q ".str_replace("/","\\",$fold)."harvest\\bnf\\*.*");
 exec("del /Q ".str_replace("/","\\",$fold)."harvest\\imdb\\*.*");
@@ -39,7 +40,7 @@ WHERE {
   ?book wdt:P268 ?IDBnF.  
   ?movie wdt:P345 ?IMDb
 }GROUP BY ?movie ?IMDb";
-//$sparql.=" LIMIT 10";
+//$sparql.=" LIMIT 20";
 
 
 $responseArray=getSparQL($sparql);

@@ -10,15 +10,21 @@ $nb_random=20;
 $q=""; // Wikidata item
 $bnf="";
 $imdb="";
-if (isset($_GET["q"]))
-	$q=str_ireplace("q","",$_GET["q"]);	
-if (isset($_GET["bnf"]))
-	$bnf=str_ireplace("cb","",$_GET["bnf"]);
-if (isset($_GET["imdb"]))
-	$imdb=$_GET["imdb"];	
 $type="movies";
 if (isset($_GET["type"]))
 	$type=$_GET["type"];	
+if (isset($_GET["q"]))
+	$q=str_ireplace("q","",$_GET["q"]);	
+if (isset($_GET["bnf"])){
+	$bnf=str_ireplace("cb","",$_GET["bnf"]);
+	$type="books";
+}
+if (isset($_GET["imdb"])){
+	$imdb=$_GET["imdb"];	
+	$type="movies";
+}
+if (isset($_GET["nb"]))
+	$nb_random=$_GET["nb"];	
 $tab_idx = array(
 	"p50" => "",// author
 	"p57"=> "",// director

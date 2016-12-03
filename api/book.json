@@ -1,0 +1,48 @@
+[
+  {
+    "id": "78",
+    "qwd": "Q170583",
+    "title": "Orgueil et Pr\u00e9jug\u00e9s",
+    "author": [
+      {
+        "qwd": "Q36322",
+        "label": "Jane Austen"
+      }
+    ],
+    "publication": "1813",
+    "genre": [
+      {
+        "qwd": "Q538812",
+        "label": ""
+      }
+    ],
+    "thumbnail": "http:\/\/gallica.bnf.fr\/ark:\/12148\/bpt6k851387f.highres",
+    "bnf": "11960594n",
+    "movies": [
+      {
+        "id": "3065",
+        "qwd": "940014",
+        "label": "Orgueil et Pr\u00e9jug\u00e9s",
+        "director": [
+          
+        ],
+        "starring": [
+          
+        ],
+        "date": "1940",
+        "genre": [
+          
+        ],
+        "country": [
+          
+        ],
+        "language": [
+          
+        ],
+        "imdb": "tt0032943",
+        "poster": "http:\/\/ia.media-imdb.com\/images\/M\/MV5BMTYyMTYwNzc5MF5BMl5BanBnXkFtZTgwOTI3NzUwMTE@._V1_SX300.jpg",
+        "url": "https:\/\/archive.org\/details\/PridePrejudice1940ColorisedFeaturetteDenham-LondonFilmStudios"
+      }
+    ]
+  }
+]

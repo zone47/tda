@@ -139,11 +139,11 @@ if ($q!=""){
 }
 if ($bnf!=""){
 	$random=false;
-	$sql="SELECT movies.id from books,movies,artw_prop WHERE books.bnf=\"".$bnf."\" AND artw_prop.id_prop=books.id AND artw_prop.prop=144 AND movies.id=artw_prop.id_artw";
+	$sql="SELECT * from books WHERE books.bnf=\"".$bnf."\"";
 }
 if ($imdb!=""){
 	$random=false;
-	$sql="SELECT books.id from books,movies,artw_prop WHERE movies.imdb=\"".$imdb."\" AND artw_prop.id_prop=books.id AND artw_prop.prop=144 AND movies.id=artw_prop.id_artw";
+	$sql="SELECT * from movies WHERE movies.imdb=\"".$imdb."\"";
 }
 if ($sql==""){
 	$random=true;

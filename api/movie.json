@@ -1,0 +1,57 @@
+[
+  {
+    "id": "58",
+    "qwd": "Q2002945",
+    "label": "Les Trois Louf'quetaires",
+    "director": [
+      {
+        "qwd": "Q295207",
+        "label": "Joel Schumacher"
+      }
+    ],
+    "starring": [
+      {
+        "qwd": "Q169982",
+        "label": "Gerard Butler"
+      }
+    ],
+    "date": null,
+    "genre": [
+      {
+        "qwd": "Q1054574",
+        "label": "film d'amour"
+      }
+    ],
+    "country": [
+      {
+        "qwd": "Q145",
+        "label": "Royaume-Uni"
+      }
+    ],
+    "imdb": "tt0032943",
+    "poster": "http:\/\/ia.media-imdb.com\/images\/M\/MV5BMTYyMTYwNzc5MF5BMl5BanBnXkFtZTgwOTI3NzUwMTE@._V1_SX300.jpg",
+    "url": "https:\/\/archive.org\/details\/PridePrejudice1940ColorisedFeaturetteDenham-LondonFilmStudios",
+    "books": [
+      {
+        "id": "14",
+        "qwd": "272506",
+        "title": "Le Fant\u00f4me de l'Op\u00e9ra",
+        "author": [
+          {
+            "qwd": "Q298827",
+            "label": "Gaston Leroux"
+          }
+        ],
+        "publication": "1910",
+        "genre": [
+          {
+            "qwd": "Q192782",
+            "label": ""
+          }
+        ],
+        "thumbnail": "http:\/\/gallica.bnf.fr\/ark:\/12148\/bpt6k808851.highres",
+        "bnf": "125746591"
+      }
+    ]
+  }
+]
