@@ -16,7 +16,7 @@ http://zone47.com/tda/api/?type=books
   
 * Recherche textuelles "lieues" pour des films (avec œuvres adaptées)  
 http://zone47.com/tda/api/?s=lieues  
-* Recherche textuelles "trois" pour des livres  
+* Recherche textuelles "trois" pour des livres  (avec adaptations) 
 http://zone47.com/tda/api/?s=trois&type=books  
   
 * Films (avec œuvres adaptées) du genre Q319221/"film d'aventure"  
