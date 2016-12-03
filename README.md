@@ -1,7 +1,8 @@
 Textes d'Affiches - API
 ======
+Le projet textes d'Affiches met en relation directe des affiches de films et des livres accesibles sur Gallica, en s'appuyant sur Wikidata, data.bnf.fr et OMDb.  
 L'API est accessible à l'adresse suivante : http://zone47.com/tda/api/  
-Les données renvoyées sont soit   
+Les données renvoyées sont soit :    
     - des films avec les œuvres littéraires adaptées  
     exemple : api/movie.json  
     - des œuvres littéraires avec leurs adaptations cinématographiques   
