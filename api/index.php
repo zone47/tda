@@ -24,6 +24,8 @@ while($data = mysqli_fetch_assoc($rep)) {
 		$result['imdb']=$data['imdb'];
 		$result['poster']=$data['poster'];
 		$result['url']=$data['url'];
+		$result['WParticle']=$data['WParticle'];
+		$result['WPintro']=$data['WPintro'];
 		$result['books']=array();
 		$ids_books=val_prop($id,144);
 		for ($i=0;$i<count($ids_books);$i++){
@@ -43,6 +45,8 @@ while($data = mysqli_fetch_assoc($rep)) {
 				$book["genre"]=list_get($id_book,9136);
 				$book["thumbnail"]=$data_book['url'];
 				$book["bnf"]=$data_book['bnf'];
+				$book['WParticle']=$data_book['WParticle'];
+				$book['WPintro']=$data_book['WPintro'];
 				$result['books'][]=$book;
 			}
 		}
@@ -56,7 +60,7 @@ while($data = mysqli_fetch_assoc($rep)) {
 		$result['bnf']=$data['bnf'];
 		$result['movies']=array();
 		$ids_movies=val_prop($id,144);
-		$sql="SELECT movies.id as id,movies.qwd as qwd,publication,imdb,poster,url FROM movies,artw_prop WHERE artw_prop.prop=144 AND artw_prop.id_prop=".$id." AND movies.id=artw_prop.id_artw";
+		$sql="SELECT movies.id as id,movies.qwd as qwd,publication,imdb,poster,url,WParticle,WPintro FROM movies,artw_prop WHERE artw_prop.prop=144 AND artw_prop.id_prop=".$id." AND movies.id=artw_prop.id_artw";
 		$rep_movie=mysqli_query($link,$sql);
 		$num_rows= mysqli_num_rows($rep_movie);
 		if ($num_rows!=0){
@@ -76,15 +80,18 @@ while($data = mysqli_fetch_assoc($rep)) {
 				$movie['imdb']=$data_movie['imdb'];
 				$movie['poster']=$data_movie['poster'];
 				$movie['url']=$data_movie['url'];
+				$movie['WParticle']=$data_movie['WParticle'];
+				$movie['WPintro']=$data_movie['WPintro'];
 				$result['movies'][]=$movie;
+				
 			}
 		}
 	}
 	$results[]=$result;
 }
 include "close_conn.php";
-//print_r($results);
 header('Content-Type: application/json');
+header("Access-Control-Allow-Origin: *");
 echo json_encode($results);
 
 ?>

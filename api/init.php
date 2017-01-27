@@ -73,4 +73,12 @@ if (isset($_GET['y1']))
 if (isset($_GET['y2']))
 	if (is_int(intval($_GET['y2']))) 
 		$y2=intval($_GET['y2']);
+if (isset($_GET['period'])){
+	$years=split("-",$_GET['period']);
+	if ((count($years)==2)&&(is_int(intval($years[0])))&&(is_int(intval($years[1])))){
+		$y1=intval($years[0]);
+		$y2=intval($years[1]);
+	}
+}
+	
 ?>

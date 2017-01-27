@@ -1,13 +1,9 @@
 <?php
-/* Harvest WD */
+/* / */
 set_time_limit(360000);
-include "functions.php";
-include "config_harvest.php";
-
-list($g_usec, $g_sec) = explode(" ",microtime());
-define ("t_start", (float)$g_usec + (float)$g_sec);
 
 $link = mysqli_connect ($host,$user,$pass,$db) or die ('Erreur : '.mysqli_error());
+
 mysqli_query($link,"SET NAMES 'utf8'");
 
 mysqli_query($link,"TRUNCATE `books`");
@@ -18,11 +14,11 @@ mysqli_query($link,"TRUNCATE `no_gallica`");
 mysqli_query($link,"TRUNCATE `p50`");
 mysqli_query($link,"TRUNCATE `p57`");
 mysqli_query($link,"TRUNCATE `p136`");
-mysqli_query($link,"TRUNCATE `p144`");
 mysqli_query($link,"TRUNCATE `p161`");
 mysqli_query($link,"TRUNCATE `p364`");
 mysqli_query($link,"TRUNCATE `p495`");
 mysqli_query($link,"TRUNCATE `p9136`");
+mysqli_query($link,"TRUNCATE `prop_sub`");
 
 exec("del /Q ".str_replace("/","\\",$fold)."harvest\\bnf\\*.*");
 exec("del /Q ".str_replace("/","\\",$fold)."harvest\\imdb\\*.*");
@@ -40,11 +36,11 @@ WHERE {
   ?book wdt:P268 ?IDBnF.  
   ?movie wdt:P345 ?IMDb
 }GROUP BY ?movie ?IMDb";
-//$sparql.=" LIMIT 20";
+//$sparql.=" LIMIT 30";
 
 
 $responseArray=getSparQL($sparql);
-$catmovies=array();
+
 foreach ($responseArray["results"]["bindings"] as $key => $value){
 	$WDmovie=$value["movie"]["value"];
 	$IMDb=$value["IMDb"]["value"];
@@ -116,8 +112,15 @@ foreach ($responseArray["results"]["bindings"] as $key => $value){
 					}
 				}
 			}
+			//Article WP
+			$WParticle="";
+			if ($varlab["sitelinks"]["frwiki"]["title"])
+				$WParticle=$varlab["sitelinks"][$lg."wiki"]["title"];
+			$WPintro="";
+			if ($WParticle!="")
+				$WPintro=truncate(get_intro($WParticle));	
 				
-			$sql="INSERT INTO movies (qwd,publication,imdb,poster,url) VALUES ($noqmovie,$publication,\"".$imdb."\",\"".$poster."\",\"".$url."\")";
+			$sql="INSERT INTO movies (qwd,publication,imdb,poster,url,WParticle,WPintro) VALUES ($noqmovie,$publication,\"".$imdb."\",\"".$poster."\",\"".$url."\",\"".esc_dblq($WParticle)."\",\"".esc_dblq($WPintro)."\")";
 			$rep=mysqli_query($link,$sql);
 			$cpt_movies++;
 			$sql="SELECT id FROM movies WHERE qwd=$noqmovie";
@@ -174,7 +177,15 @@ foreach ($responseArray["results"]["bindings"] as $key => $value){
 						$bnf=$valprop["mainsnak"]["datavalue"]["value"];
 					$url=thumb($bnf);
 					
-					$sql="INSERT INTO books (qwd,creation,publication,bnf,url) VALUES ($noqbook,$creation,$publication,\"".$bnf."\",\"".$url."\")";
+					//Article WP
+					$WParticle="";
+					if ($varlab["sitelinks"]["frwiki"]["title"])
+						$WParticle=$varlab["sitelinks"][$lg."wiki"]["title"];
+					$WPintro="";
+					if ($WParticle!="")
+						$WPintro=truncate(get_intro($WParticle));
+					
+					$sql="INSERT INTO books (qwd,creation,publication,bnf,url,WParticle,WPintro) VALUES ($noqbook,$creation,$publication,\"".$bnf."\",\"".$url."\",\"".esc_dblq($WParticle)."\",\"".esc_dblq($WPintro)."\")";
 					$rep=mysqli_query($link,$sql);
 					$cpt_books++;
 					$sql="SELECT id FROM books WHERE qwd=$noqbook";
@@ -222,14 +233,9 @@ foreach ($responseArray["results"]["bindings"] as $key => $value){
 		}
 	}
 }
-$cat_path=$fold."harvest/data.json";
-$cat = fopen($cat_path, 'w');
-fputs ($cat, json_encode($catmovies));
-fclose($cat);
 
+mysqli_close($link);
 echo "\nHarvest done - $cpt_movies movies - $cpt_books books - ";
 
-list($g2_usec, $g2_sec) = explode(" ",microtime());
-define ("t_end", (float)$g2_usec + (float)$g2_sec);
-print round (t_end-t_start, 1)." secondes"; 
+
 ?>
