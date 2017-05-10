@@ -11,6 +11,12 @@ $q=""; // Wikidata item
 $bnf="";
 $imdb="";
 $type="movies";
+$islabel=false;
+$label="";
+if (isset($_GET["label"])){
+	$label=$_GET["label"];
+	$islabel=true;
+}
 if (isset($_GET["type"]))
 	$type=$_GET["type"];	
 if (isset($_GET["q"]))

@@ -4,6 +4,14 @@ include "config.php";
 include "functions.php";
 include "open_conn.php";
 include "init.php";
+
+if ($islabel){
+	$results=array();
+	$results['entity']['qwd']=$label;
+	$results['entity']['label']=label_item($label);
+}
+else
+{
 include "query.php";
 
 $results=array();
@@ -38,7 +46,7 @@ while($data = mysqli_fetch_assoc($rep)) {
 				$id_book=$data_book['id'];
 				$qwd_book=$data_book['qwd'];
 				$book["id"]=$id_book;
-				$book["qwd"]=$qwd_book;
+				$book["qwd"]="Q".$qwd_book;
 				$book["title"]=label_item($qwd_book);
 				$book["author"]=list_get($id_book,50);
 				$book["publication"]=$data_book['publication'];
@@ -58,6 +66,8 @@ while($data = mysqli_fetch_assoc($rep)) {
 		$result["genre"]=list_get($id,9136);
 		$result['thumbnail']=$data['url'];
 		$result['bnf']=$data['bnf'];
+		$result['WParticle']=$data['WParticle'];
+		$result['WPintro']=$data['WPintro'];
 		$result['movies']=array();
 		$ids_movies=val_prop($id,144);
 		$sql="SELECT movies.id as id,movies.qwd as qwd,publication,imdb,poster,url,WParticle,WPintro FROM movies,artw_prop WHERE artw_prop.prop=144 AND artw_prop.id_prop=".$id." AND movies.id=artw_prop.id_artw";
@@ -69,7 +79,7 @@ while($data = mysqli_fetch_assoc($rep)) {
 				$id_movie=$data_movie['id'];
 				$qwd_movie=$data_movie['qwd'];
 				$movie["id"]=$id_movie;
-				$movie["qwd"]=$qwd_movie;
+				$movie["qwd"]="Q".$qwd_movie;
 				$movie['label']=label_item($qwd_movie);
 				$movie['director']=list_get($id_movie,57);
 				$movie['starring']=list_get($id_movie,161);
@@ -88,6 +98,7 @@ while($data = mysqli_fetch_assoc($rep)) {
 		}
 	}
 	$results[]=$result;
+}
 }
 include "close_conn.php";
 header('Content-Type: application/json');
