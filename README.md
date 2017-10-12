@@ -49,3 +49,29 @@ http://zone47.com/tda/api/?bnf=122246495
 [NB : type a comme valeur par défaut "movies"]  
 [NB2 : pour les identifiant wikidata,  le caratère "Q" est facultatif ; ?genre=Q1433443 équivaut à ?genre=1433443]  
 [NB3 : hormis pour q, imdb, et bnf, censés ne renvoyer qu'une réponse, les autres paramètres sont combinables pour un même type (books ou movies) même si étant donné le volume actuel cela ne présente pas grand intérêt]  
+
+***************** Mise à jour janvier 2017
+* article et introduction de Wikipédia pour les films et livres
+Quand l'article existe. Les introductions, qui correspondent à ce qu'il y a avant le sommaire, sont limitées à 500 caractères, parce que parfois c'est très très long. Ils sont dans le paquet json comme avant (propriétés WParticle et WPintro).
+
+* autocomplétion
+Exemple http://zone47.com/tda/api/autocompletion.php?keyword=trois
+Cela renvoie de 0 à 5 résultats avec chacun 4 propriétés :
+    - "prop", la propriété correspondante
+    - "qwd", le numéro Wikidata
+    - "label", le libellé
+    - "img", éventuellement une URL d'image si disponible pour les films et livres
+Les résultats sont classés par occurrences décroissantes. Ainsi "trois" renverra d'abord le livre "Les Trois Mousquetaires" et "William" l'auteur Shakespeare, J'en ai bavé mais ça marche plutôt bien et répond rapidement.
+
+* liste de valeurs par propriétés par occurrences décroissante
+Exemple : http://zone47.com/tda/api/cat.php?cat=genre_book pour avoir les genres de livres et http://zone47.com/tda/api/cat.php?cat=genre_book&limit=10 pour avoir les plus 10 plus importants. Ce classement tient compte des sous-classes; ainsi "roman" comprend notamment les romans policiers et les romans d'aventures. À noter que cette approche, indispensable pour éviter les aberrations, implique nécessairement un peu de bruit pour les genres avec d'éventuelles superclasses qui pourrait être filtrées comme "fiction".
+Les valeurs possibles pour le paramètre "cat" :
+    - "author"
+    - "director"
+    - "genre_movie"
+    - "starring"
+    - "language"
+    - "country"
+    - "genre_book"
+
+* Pour l'autocomplétion et la liste des valeurs par propriété, les données obtenues sont réutilisables comme précédemment. Par exemple du premier résultat de la recherche "trois" on déduit un lien vers le livre, arrivé en premier http://zone47.com/tda/api/?type=books&q=140527 , le film arrivé en second http://zone47.com/tda/api/?q=Q309248 et ainsi de suite. Ou encore pour la liste des réalisateurs http://zone47.com/tda/api/cat.php?cat=director avec le premier résultat on déduit un lien vers http://zone47.com/tda/api/?director=55294
